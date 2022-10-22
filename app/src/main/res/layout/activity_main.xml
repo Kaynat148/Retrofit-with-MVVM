@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+  <!--  <data>
+        <variable
+            name="mainViewModel"
+            type="com.maximus.task.ViewModel.MainViewModel" />
+    </data>-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity"
+    android:background="#fceded">
+
+
+    <ImageView
+        android:id="@+id/pandaimg"
+        android:layout_width="84dp"
+        android:layout_height="107dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/facttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:padding="12dp"
+         android:textAlignment="center"
+        android:textColorHighlight="#000000"
+        android:textColor="@color/purple_700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ProgressBar
+        android:id="@+id/idLoadingPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/refreshbtn"
+        android:layout_margin="10dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/refreshbtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_text"
+        app:strokeColor="#b87da1"
+        app:strokeWidth="8dp"
+        android:padding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearance="@style/GreenButtonThemeOverlay"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

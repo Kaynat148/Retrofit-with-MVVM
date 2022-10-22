@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TaskMaximus</string>
+    <string name="button_text">Press me to Reload</string>
+</resources>
